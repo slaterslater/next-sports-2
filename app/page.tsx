@@ -24,8 +24,8 @@ export default async function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5">
+      <div className="z-10 w-full max-w-lg items-center justify-between font-mono text-sm lg:flex">
       <ul>
         {headlines.map((headline, i) => <li key={i} className='mb-10 border-b pb-5'><div dangerouslySetInnerHTML={{__html: headline}} /></li>)}
       </ul>

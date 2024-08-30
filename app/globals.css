@@ -54,6 +54,8 @@ body {
   align-items: center;
   padding-top: 5px;
   margin-left:5px;
+  font-size: 0.85em;
+  color: #D8D8D8;
 }
 
 .PlayerNewsPost-team-logo {
@@ -74,7 +76,7 @@ body {
 /* HEADLINES STYLES */
 
 .PlayerNewsPost-headline {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   margin: 10px 0;
 }
@@ -82,6 +84,8 @@ body {
 .PlayerNewsPost-analysis {
   line-height: 1.5em;
   margin-bottom: 10px;
+  font-weight: 300;
+  color: #D8D8D8
 }
 
 /* RELATED STYLES */
@@ -110,6 +114,10 @@ body {
   height: 25px;
   width: 25px;
   margin-right: 8px;
+}
+
+.PlayerNewsPost-related {
+  display: none;
 }
 
 
