@@ -13,23 +13,23 @@ export default async function Home() {
     const text = await resp.text()
     const $ = cheerio.load(text)
 
-    const news = $('.PlayerNewsPost-name').map(function() {
-      return $(this).text();
+    
+    const news = $('.PlayerNewsPost').map(function() {
+      const postClone = $(this).clone();
+      postClone.find('.PlayerNewsPost-footer').remove();
+      return postClone.html();
       }).toArray();
 
     headlines.push(...news)
   }
 
-  let date = new Date().toDateString()
-  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
       <ul>
-        {headlines.map((headline, i) => <li key={i}>{headline}</li>)}
+        {headlines.map((headline, i) => <li key={i} className='mb-10 border-b pb-5'><div dangerouslySetInnerHTML={{__html: headline}} /></li>)}
       </ul>
       </div>
-      <div>{date}</div>
     </main>
   );
 }

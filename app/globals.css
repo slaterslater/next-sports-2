@@ -31,3 +31,87 @@ body {
     text-wrap: balance;
   }
 }
+
+/* PLAYER STYLES */
+
+.PlayerNewsPost-player {
+  display: flex;
+}
+
+.PlayerNewsPost-image .Image {
+  width: 75px;
+  height: 75px;
+  border-radius: 3px;
+} 
+
+.PlayerNewsPost-name {
+  font-size: 1.25em;
+  padding-left: 10px;
+}
+
+.PlayerNewsPost-team {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin-left:5px;
+}
+
+.PlayerNewsPost-team-logo {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.PlayerNewsPost-team span {
+  margin: 0 5px;
+}
+
+.PlayerNewsPost-position::before, .PlayerNewsPost-number::before {
+  content: "• "
+}
+
+/* HEADLINES STYLES */
+
+.PlayerNewsPost-headline {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.PlayerNewsPost-analysis {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* RELATED STYLES */
+
+.PlayerNewsPost-related {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.PlayerNewsPost-related-items, .PlayerNewsPost-related-item > a {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.PlayerNewsPost-related-item {
+  border: 1px solid white;
+  border-radius: 100px;
+  margin: 5px;
+  padding: 0 10px;
+}
+
+.PlayerNewsPost-related-item .Image {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+}
+
+
+
+
