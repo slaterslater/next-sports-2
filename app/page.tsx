@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio'
 // import Link from 'next/link'
 // import { IoMdRefresh } from "react-icons/io";
 
-// export const revalidate = 60 // invalidate every minute
+export const revalidate = 60 // invalidate every minute
 const PAGES = 3
 
 export default async function Home() {
